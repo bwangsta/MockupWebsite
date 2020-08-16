@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Born out of University of California San Diego, Viberent is a research based clean tech 
+   manufacturer looking to close the loop in the fashion industry.">
 	<title>Viberent</title>
 
 	<!-- Google Fonts -->
@@ -10,37 +12,41 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<!-- Custom Stylesheet -->
-	<link rel="stylesheet" href="../static/css/styles.css">
+  <link rel="stylesheet" href="../static/css/styles.css">
 
 	<link rel="shortcut icon" type="image/x-icon" href="../static/images/logo.ico"/>
 </head>
 <body>
-	<div class="banner">
-    <div class="banner-text">
-      <h1>Viberent</h1>
+	<header class="showcase">
+    <div class="video-container">
+      <video src="../static/videos/background-video.mp4" autoplay muted loop></video>
     </div>
-	</div>
-	
-	<div class="container">
+    <div class="content">
+      <h1 class="viberent-header">Viberent</h1>
+      <h2>Freshen Up Your Look <br> By Changing the Color of Your Future Garment</h2>
+    </div>
+  </header>
+  
+  <main class="container">
     <section id="dyes">
       <div class="text-center">
         <h1 class="text-uppercase">Make an Impact</h1>
-        <h1>by Changing the Color of your Garments</h1>
-        <h6 class="text-center">(Click On A Color!)</h6>
+        <h2>By Changing the Color of your Garments</h2>
+        <h3 class="text-center">(Click On A Color!)</h3>
       </div>
       <!-- === DYE BUTTONS === -->
       <div class="row">
         <div class="col-6 text-center">
-          <button id="redBtn" class="dyesBtn btn" type="button" ></button>
+          <button id="redBtn" class="dyesBtn btn" type="button" aria-label="Pink Button"></button>
         </div>
         <div class="col-6 text-center">
-          <button id="blueBtn" class="dyesBtn btn" type="button"></button>
+          <button id="blueBtn" class="dyesBtn btn" type="button" aria-label="Blue Button"></button>
         </div>
       </div>
       <!-- === DYE VIDEOS === -->
       <div id="redDye" class="collapsed">
         <div class="text-center">
-          <h3>By rewearing your "new" clothes <span class="redDisplay">0</span> time(s), you have saved</h3>
+          <h4>By rewearing your "new" clothes <span class="redDisplay">0</span> time(s), you have saved</h4>
           <div class="saved text-left">
             <p><span class="redDisplay">0</span>x gallon(s) of dye</p>
             <p><span class="redDisplay">0</span>x gallon(s) of other chemicals</p>
@@ -48,13 +54,13 @@
             <p><span class="redDisplay">0</span>  other garment(s) you could have bought instead</p>
           </div>
           <div class="text-center">
-            <video class="dyeVideos" src="../static/videos/pink-dye.mp4" type="video/mp4" autoplay muted controls playsinline controlslist="nodownload"></video>
+            <video class="dyeVideos" src="../static/videos/pink-video.mp4" type="video/mp4" autoplay muted controls playsinline controlslist="nodownload"></video>
           </div>
         </div>
       </div>
       <div id="blueDye" class="collapsed">
         <div class="text-center">
-          <h3>By rewearing your "new" clothes <span class="blueDisplay">0</span> time(s), you have saved</h3>
+          <h4>By rewearing your "new" clothes <span class="blueDisplay">0</span> time(s), you have saved</h4>
           <div class="saved text-left">
             <p><span class="blueDisplay">0</span>x gallons of dye</p>
             <p><span class="blueDisplay">0</span>x gallons of other chemicals</p>
@@ -62,7 +68,7 @@
             <p><span class="blueDisplay">0</span>  other garments you could have bought instead</p>
           </div>
           <div class="text-center">
-            <video class="dyeVideos" src="../static/videos/street_walk.mp4" type="video/mp4" autoplay muted controls playsinline></video>
+            <video class="dyeVideos" src="../static/videos/blue-video.mp4" type="video/mp4" autoplay muted controls playsinline controlslist="nodownload"></video>
           </div>
         </div>
       </div>
@@ -70,21 +76,22 @@
   
     <section>
       <div class="row justify-content-center">
-        <div class="col-10 col-sm-6">
+        <div class="col-10">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyqpXKfXKTmt-6RE5KQTifcn2Qtc8lolssDefWV2HzsY9vhQ/viewform?embedded=true" 
-          width="100%" height="2250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+           title="How It Works and Feedback Google Form" loading="lazy" width="100%" height="2250" frameborder="0" marginheight="0" 
+           marginwidth="0">Loading…</iframe>
         </div>
       </div>
     </section>
-  </div>
-
+  </main>
+    
 	<!-- ===== FOOTER SECTION ===== -->
 	<footer>
-    <h1 class="text-center">VIBERENT</h1>
+    <h1 class="text-center viberent-header">Viberent</h1>
     <div class="row justify-content-center">
-      <a href="https://www.instagram.com/viberent.co/?hl=en"><i class="fab fa-instagram fa-3x"></i></a>
+      <a href="https://www.instagram.com/viberent.co/?hl=en" aria-label="Instagram"><i class="fab fa-instagram fa-3x"></i></a>
     </div>
-    <p style="color: white;" class="text-center">Copyright &#169 2020 Viberent, Inc. All rights reserved.</p>
+    <p class="text-center">Copyright &#169 2020 Viberent, Inc. All rights reserved.</p>
 	</footer>
 
 	

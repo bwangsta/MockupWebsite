@@ -3,92 +3,182 @@ body, html {
 	font-family: 'Quicksand', sans-serif;
 	height: 100%;
 }
-
 section {
 	padding: 5rem 0;
 }
 
-/* --- BANNER --- */
-.banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/pattern.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* ===== Background Video ===== */
+.showcase {
   position: relative;
-}
-
-.banner-text {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 0 1.5rem;
+  color: white;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: no-repeat center center/cover;
+}
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
 }
 
-.banner-text h1 {
-	font-size: 13vw;
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 0.5rem;
+/* Background Overlay Color */
+.video-container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.content {
+  z-index: 10;
+}
+.viberent-header {
+  font-size: 7em;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  font-weight: 700;
+  text-shadow: .1rem .1rem .8rem black;
+  text-indent: 0.7rem;
+}
+.content h2 {
+  font-size: 2em;
+  text-shadow: .1rem .1rem .8rem black;
+  letter-spacing: 0.1rem;
 }
 
-/* ========== DYE VIDEOS ========== */
+/* ===== Dye Videos ===== */
 #dyes h1 {
-  font-size: 2rem;
+  font-size: 3.7em;
 }
-
-#dyes h6 {
-  font-size: 1.5rem;
+#dyes h2 {
+  font-size: 2em;
 }
-
+#dyes h3 {
+  font-size: 1.5em;
+  margin-bottom: 2rem;
+}
+#dyes h4 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
 .dyesBtn {
   height: 100px;
   width: 100px;
   border-radius: 50% !important;
-  margin-bottom: 2rem;
 }
-
 .dyeVideos {
-  /* display: none; */
-  /* width: 66vw; */
-  height: 66vh;
+  width: 66vw;
   border-radius: 1%;
 }
-
 .saved {
   display: inline-block;
   margin: 1rem 0;
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
-
 #redBtn {
   background-color: pink;
 }
-
 #blueBtn {
   background-color: blue;
 }
-
 .collapsed {
   display: none;
 }
 
-/* --- FOOTER SECTION --- */
+/* ===== Footer ===== */
 footer {
   padding: 5rem 0 10rem 0;
   background-color: black;
-}
-
-footer h1 {
   color: white;
-  font-size: 5rem;
-	font-weight: 700;
-	letter-spacing: 1.2rem;
-	text-shadow: .1rem .1rem .8rem black;
 }
-
 footer .fab {
   margin: 3rem 1rem;
+}
+footer p {
+  padding: 0 0.5em;
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 767.98px) {
+  .viberent-header {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 515px) {
+  .viberent-header {
+    font-size: 4.3em;
+  }
+  .content h2 {
+    font-size: 1.5em;
+  }
+  #dyes h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 425px) {
+  .viberent-header {
+    font-size: 3em;
+  }
+  .content h2 {
+    font-size: 1.2em;
+  }
+  #dyes h1 {
+    font-size: 2.3em;
+  }
+  #dyes h2 {
+    font-size: 1.4em;
+  }
+  #dyes h3 {
+    font-size: 1.2em;
+  }
+  #dyes h4 {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 320px) {
+  .viberent-header {
+    font-size: 2.5em;
+  }
+  #dyes h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 280px) {
+  .viberent-header {
+    font-size: 2em;
+  }
+  .content h2 {
+    font-size: 1em;
+  }
+  #dyes h1 {
+    font-size: 1.5em;
+  }
+  #dyes h2 {
+    font-size: 1.2em;
+  }
+  #dyes h3 {
+    font-size: 0.9em;
+  }
+  #dyes h4 {
+    font-size: 1.2em;
+  }
 }
