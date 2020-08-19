@@ -29,7 +29,11 @@
 <body>
 	<header class="showcase">
     <div class="video-container">
-      <video src="../static/videos/background-video.mp4" autoplay muted loop playsinline></video>
+      <video autoplay muted loop playsinline>
+        <source src="../static/videos/background-video.webm" type="video/webm">
+        <source src="../static/videos/background-video.mp4" type="video/mp4">
+        Your Browser Does Not Support HTML5 Video.
+      </video>
     </div>
     <div class="content">
       <h1 class="viberent-header">Viberent</h1>
@@ -67,6 +71,7 @@
             <video class="dyeVideos" type="video/mp4" autoplay muted controls playsinline controlslist="nodownload">
               <source src="../static/videos/pink-video.webm" type="video/webm">
               <source src="../static/videos/pink-video.mp4" type="video/mp4">
+              Your Browser Does Not Support HTML5 Video.
             </video>
           </div>
         </div>
@@ -84,6 +89,7 @@
             <video class="dyeVideos" type="video/mp4" autoplay muted controls playsinline controlslist="nodownload">
               <source src="../static/videos/blue-video.webm" type="video/webm">
               <source src="../static/videos/blue-video.mp4" type="video/mp4">
+              Your Browser Does Not Support HTML5 Video.
             </video>
           </div>
         </div>
