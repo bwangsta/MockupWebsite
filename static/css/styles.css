@@ -10,7 +10,7 @@ section {
 /* ===== Background Video ===== */
 .showcase {
   position: relative;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
