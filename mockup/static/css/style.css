@@ -7,6 +7,12 @@ section {
 	padding: 5rem 0;
 }
 
+/* ===== Navigation Bar ===== */
+.navbar-brand img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 /* ===== Home Page ===== */
 /* ===== Background Video ===== */
 .showcase {
