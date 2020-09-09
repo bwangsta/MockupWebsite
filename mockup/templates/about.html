@@ -4,15 +4,15 @@
     <h1 class="header">Meet the Team</h1>
     <div class="row justify-content-center">
       <div class="col-12 col-md-3">
-        <img src="../static/images/diana-valdes.jpg" alt="Diana Valdes" loading="lazy">
+        <img src="{{ url_for('static', filename='images/diana-valdes.jpg') }}" alt="Diana Valdes" loading="lazy">
         <h2>Diana Valdes</h2>
         <p>Chief Executive Officer</p>
       </div>
       <div class="col-6 col-md-3">
         <picture>
-          <source type="image/webp" srcset="../static/images/tiffany-wang.webp">
-          <source type="image/jpeg" srcset="../static/images/tiffany-wang.jpg">
-            <img src="../static/images/tiffany-wang.jpg" alt="Tiffany Wang" loading="lazy">
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/tiffany-wang.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/tiffany-wang.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/tiffany-wang.jpg') }}" alt="Tiffany Wang" loading="lazy">
         </picture>
         <h2>Tiffany Wang</h2>
         <p>Chief Product Officer</p>
@@ -29,7 +29,11 @@
         <h2>Kayleen Chee</h2>
       </div>
       <div class="col-6 col-md-3">
-        <img src="../static/images/jefferson-lei.jpg" alt="Jefferson Lei" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/jefferson-lei.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/jefferson-lei.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/jefferson-lei.jpg') }}" alt="Jefferson Lei" loading="lazy">
+        </picture>
         <h2>Jefferson Lei</h2>
         <p>Materials Development Engineer</p>
       </div>
@@ -38,13 +42,22 @@
         <h2>Ruixiao Liu</h2>
       </div>
       <div class="col-6 col-md-3">
-        <img src="../static/images/user.svg" alt="Arthur Miranda-Huicochea" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/arthur-miranda-huicochea.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/arthur-miranda-huicochea.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/arthur-miranda-huicochea.jpg') }}" alt="Arthur Miranda-Huicochea" loading="lazy">
+        </picture>
+        
         <h2>Arthur Miranda-Huicochea</h2>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-6 col-md-3">
-        <img src="../static/images/khoa-nguyen.jpg" alt="Khoa Nguyen" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/khoa-nguyen.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/khoa-nguyen.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/khoa-nguyen.jpg') }}" alt="Khoa Nguyen" loading="lazy">
+        </picture>
         <h2>Khoa Nguyen</h2>
         <p>Production Design Coordinator</p>
       </div>
@@ -53,23 +66,40 @@
         <h2>Nam Nguyen</h2>
       </div>
       <div class="col-6 col-md-3">
-        <img src="../static/images/user.svg" alt="Tanay Patil" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/tanay-patil.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/tanay-patil.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/tanay-patil.jpg') }}" alt="Tanay Patil" loading="lazy">
+        </picture>
         <h2>Tanay Patil</h2>
+        <p>System Integration Coordinator</p>
       </div>
       <div class="col-6 col-md-3">
-        <img src="../static/images/tatiana-podhajny.jpg" alt="Tatiana Podhajny" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/tatiana-podhajny.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/tatiana-podhajny.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/tatiana-podhajny.jpg') }}" alt="Tatiana Podhajny" loading="lazy">
+        </picture>
         <h2>Tatiana Podhajny</h2>
         <p>Fiber Investigator</p>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-6 col-md-3">
-        <img src="../static/images/aku-saraf.jpg" alt="Aku Saraf" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/aku-saraf.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/aku-saraf.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/aku-saraf.jpg') }}" alt="Aku Saraf" loading="lazy">
+        </picture>
         <h2>Aku Saraf</h2>
         <p>Physicist</p>
       </div>
       <div class="col-6 col-md-3">
-        <img src="../static/images/brian-wang.jpg" alt="Brian Wang" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/brian-wang.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/brian-wang.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/brian-wang.jpg')}}" alt="Brian Wang" loading="lazy">
+        </picture>
         <h2>Brian Wang</h2>
         <p>Front-End Web Developer</p>
       </div>
