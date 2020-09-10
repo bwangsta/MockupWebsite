@@ -7,13 +7,13 @@ section {
 	padding: 5rem 0;
 }
 .header {
-  font-size: 3.7em;
+  font-size: 3.5em;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1.5rem;
   background: #03001e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fdeff9, #F8BBD0, #1e3c72, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fdeff9, #F8BBD0, #1e3c72, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #fdeff9, #fd79a8, #1e3c72, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdeff9, #fd79a8, #1e3c72, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -82,14 +82,11 @@ section {
   letter-spacing: 0.7rem;
   font-weight: 700;
   text-indent: 0.7rem;
-  text-shadow: 0px 3px 0px #b2a98f,
-                 0px 14px 10px rgba(0,0,0,0.15),
-                 0px 24px 2px rgba(0,0,0,0.1),
-                 0px 34px 30px rgba(0,0,0,0.1);
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 .content h2 {
   font-size: 2em;
-  text-shadow: .1rem .1rem .8rem black;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   letter-spacing: 0.1rem;
 }
 
@@ -158,6 +155,8 @@ footer p {
 #about h2 {
   font-size: 1.3em;
   text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 #about p {
   text-align: center;
@@ -204,6 +203,9 @@ footer p {
   #dyes h4 {
     font-size: 1.4em;
   }
+  #story p {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 320px) {
   .viberent-header {
@@ -212,13 +214,22 @@ footer p {
   .header {
     font-size: 2em;
   }
+  #about h2 {
+    font-size: 1.2em;
+  }
+  #about p {
+    font-size: 0.9em;
+  }
+  footer p {
+    font-size: 0.7em;
+  }
 }
 @media (max-width: 280px) {
   .viberent-header {
     font-size: 2em;
   }
   .header {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
   .content h2 {
     font-size: 1em;
