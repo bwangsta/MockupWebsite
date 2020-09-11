@@ -22,7 +22,11 @@
         <p>Chief Product Officer</p>
       </div>
       <div class="col-sm-6 col-md-3">
-        <img src="../static/images/user.svg" alt="Richard Miller" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/richard-miller.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/richard-miller.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/richard-miller.jpg') }}" alt="Richard Miller" loading="lazy">
+        </picture>
         <h2>Richard Miller</h2>
         <p>Chief Technology Officer</p>
       </div>
@@ -62,6 +66,7 @@
           <img src="{{ url_for('static', filename='images/arthur-miranda-huicochea.jpg') }}" alt="Arthur Miranda-Huicochea" loading="lazy">
         </picture>
         <h2>Arthur Miranda-Huicochea</h2>
+        <p>Garment Production Engineer</p>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -75,8 +80,13 @@
         <p>Production Design Coordinator</p>
       </div>
       <div class="col-sm-6 col-md-3">
-        <img src="../static/images/user.svg" alt="Nam Nguyen" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/nam-nguyen.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/nam-nguyen.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/nam-nguyen.jpg') }}" alt="Nam Nguyen" loading="lazy">
+        </picture>
         <h2>Nam Nguyen</h2>
+        <p>Applications Engineer</p>
       </div>
       <div class="col-sm-6 col-md-3">
         <picture>
@@ -117,7 +127,11 @@
         <p>Front-End Web Developer</p>
       </div>
       <div class="col-sm-6 col-md-3">
-        <img src="../static/images/user.svg" alt="Yan Yu" loading="lazy">
+        <picture>
+          <source type="image/webp" srcset="{{ url_for('static', filename='images/yan-yu.webp') }}" loading="lazy">
+          <source type="image/jpeg" srcset="{{ url_for('static', filename='images/yan-yu.jpg') }}" loading="lazy">
+          <img src="{{ url_for('static', filename='images/yan-yu.jpg') }}" alt="Yan Yu" loading="lazy">
+        </picture>
         <h2>Yan Yu</h2>
         <p>Creative Director</p>
       </div>
