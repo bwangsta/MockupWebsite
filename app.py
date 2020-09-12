@@ -1,4 +1,6 @@
 from mockup import app
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
+    # For Development
+    # app.run(debug=True)
