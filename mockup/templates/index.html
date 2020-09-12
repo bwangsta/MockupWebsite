@@ -27,8 +27,8 @@
         </div>
         <div class="text-center">
           <video class="dyeVideos" type="video/mp4" autoplay muted controls playsinline controlslist="nodownload">
-            <source src="../static/videos/pink-video.webm" type="video/webm">
-            <source src="../static/videos/pink-video.mp4" type="video/mp4">
+            <source src="{{ url_for('static', filename='videos/pink-video.webm') }}" type="video/webm">
+            <source src="{{ url_for('static', filename='videos/pink-video.mp4') }}" type="video/mp4">
             Your Browser Does Not Support HTML5 Video.
           </video>
         </div>
@@ -45,8 +45,8 @@
         </div>
         <div class="text-center">
           <video class="dyeVideos" type="video/mp4" autoplay muted controls playsinline controlslist="nodownload">
-            <source src="../static/videos/blue-video.webm" type="video/webm">
-            <source src="../static/videos/blue-video.mp4" type="video/mp4">
+            <source src="{{ url_for('static', filename='videos/blue-video.webm') }}" type="video/webm">
+            <source src="{{ url_for('static', filename='videos/blue-video.mp4') }}" type="video/mp4">
             Your Browser Does Not Support HTML5 Video.
           </video>
         </div>

@@ -168,9 +168,28 @@ footer p {
 }
 
 /* ===== Media Queries ===== */
+@media (max-width: 812px) {
+  .viberent-header {
+    font-size: 6.5em;
+  }
+  .content h2 {
+    font-size: 1.8em;
+  }
+}
 @media (max-width: 767.98px) {
   .viberent-header {
-    font-size: 6rem;
+    font-size: 5.5em;
+  }
+  .content h2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 640px) {
+  .viberent-header {
+    font-size: 5em;
+  }
+  .content h2 {
+    font-size: 1.4em;
   }
 }
 @media (max-width: 515px) {
@@ -179,9 +198,6 @@ footer p {
   }
   .header {
     font-size: 3em;
-  }
-  .content h2 {
-    font-size: 1.5em;
   }
 }
 @media (max-width: 425px) {
