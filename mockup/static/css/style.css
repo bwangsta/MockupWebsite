@@ -107,8 +107,11 @@ section {
   width: 100px;
   border-radius: 50% !important;
 }
+.countDisplay {
+  font-weight: 700;
+}
 .dyeVideos {
-  width: 66vw;
+  width: 50rem;
   border-radius: 1%;
 }
 .saved {
@@ -124,20 +127,6 @@ section {
 }
 .hidden {
   display: none;
-}
-
-/* ===== Footer ===== */
-footer {
-  padding: 5rem 0 1rem 0;
-  background-color: black;
-  color: white;
-}
-footer img {
-  width: 50px;
-  margin: 2.5rem;
-}
-footer p {
-  padding: 0 0.5em;
 }
 
 /* ===== About Us Page ===== */
@@ -167,7 +156,26 @@ footer p {
   font-size: 1.5em;
 }
 
+/* ===== Footer ===== */
+footer {
+  padding: 5rem 0 1rem 0;
+  background-color: black;
+  color: white;
+}
+footer img {
+  width: 50px;
+  margin: 2.5rem;
+}
+footer p {
+  padding: 0 0.5rem;
+}
+
 /* ===== Media Queries ===== */
+@media (max-width: 1500px) {
+  .dyeVideos {
+    width: 66vw;
+  }
+}
 @media (max-width: 812px) {
   .viberent-header {
     font-size: 6.5em;

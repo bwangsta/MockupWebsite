@@ -7,8 +7,8 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template("about.html", title="About")
+    return render_template("about.html", title="About Us")
 
 @app.route("/story")
 def story():
-    return render_template("story.html", title="Story")
+    return render_template("story.html", title="Our Story")
