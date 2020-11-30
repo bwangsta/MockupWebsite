@@ -129,6 +129,13 @@ section {
   display: none;
 }
 
+/* Calendar Section */
+#calendar .calendly-inline-widget {
+  min-width: 320px;
+  height: 800px;
+  width: 100%;
+}
+
 /* ===== About Us Page ===== */
 #about img {
   height: 140px;
@@ -160,6 +167,7 @@ section {
 footer {
   padding: 5rem 0 1rem 0;
   background-color: black;
+  margin-top: 7rem;
   color: white;
 }
 footer img {
