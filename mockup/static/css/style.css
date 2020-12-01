@@ -90,6 +90,11 @@ section {
   letter-spacing: 0.1rem;
 }
 
+/* ===== Newsletter Form ===== */
+#newsletter h1 {
+  text-align: left;
+}
+
 /* ===== Dye Videos ===== */
 #dyes h2 {
   font-size: 2em;
