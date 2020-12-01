@@ -1,5 +1,9 @@
 var clicks = 0;
 
+$(window).on('load',function(){
+    $('#myModal').modal('show');
+});
+
 $("#redBtn").on("click", function() {
     if($("#redDye").css("display") === "none") {
         if($("#blueDye").css("display") != "none") {
