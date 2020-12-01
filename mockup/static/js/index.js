@@ -1,7 +1,7 @@
 var clicks = 0;
 
 $(window).on('load',function(){
-    $('#myModal').modal('show');
+    $('#newsletter').modal('show');
 });
 
 $("#redBtn").on("click", function() {

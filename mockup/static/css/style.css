@@ -4,7 +4,7 @@ body, html {
   height: 100%;
 }
 section {
-	padding: 5rem 0;
+	padding: 3rem 0;
 }
 .header {
   font-size: 3.5em;
@@ -20,6 +20,9 @@ section {
 }
 
 /* ===== Navigation Bar ===== */
+nav.navbar {
+  padding: 0.3rem 1rem;
+}
 .navbar-brand img {
   width: 2rem;
   height: 2rem;
@@ -44,6 +47,7 @@ section {
   text-align: center;
   padding: 0 1.5rem;
   color: white;
+  margin-bottom: 2rem;
 }
 .video-container {
   position: absolute;
@@ -90,9 +94,12 @@ section {
   letter-spacing: 0.1rem;
 }
 
-/* ===== Newsletter Form ===== */
+/* ===== Modal ===== */
+#newsletter .modal-header, .modal-footer {
+  border: 0;
+}
 #newsletter h1 {
-  text-align: left;
+  font-size: 2em;
 }
 
 /* ===== Dye Videos ===== */
@@ -179,8 +186,12 @@ footer img {
   width: 50px;
   margin: 1.5rem;
 }
+footer button {
+  margin: 1rem 0;
+}
 footer p {
   padding: 0 0.5rem;
+  margin-top: 1rem;
 }
 
 /* ===== Media Queries ===== */
