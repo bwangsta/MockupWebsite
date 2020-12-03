@@ -175,16 +175,30 @@ nav.navbar {
   font-size: 1.5em;
 }
 
+/* Contact Us Page */
+#calendar h1.header {
+  margin-bottom: 0;
+}
+
 /* ===== Footer ===== */
 footer {
-  padding: 5rem 0 1rem 0;
+  padding: 3rem 0.1rem 0.1rem 0.1rem;
   background-color: black;
-  margin-top: 7rem;
+  margin-top: 3rem;
   color: white;
+}
+footer h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.7rem;
+  text-indent: 0.7rem;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 footer img {
   width: 50px;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 footer button {
   margin: 1rem 0;

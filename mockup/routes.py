@@ -12,3 +12,7 @@ def about():
 @app.route("/story")
 def story():
     return render_template("story.html", title="Our Story")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html", title="Contact Us")

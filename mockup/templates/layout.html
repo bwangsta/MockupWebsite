@@ -48,7 +48,10 @@
             <a class="nav-link" href="{{ url_for('story') }}">Our Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -73,24 +76,14 @@
 
   <!-- ===== FOOTER SECTION ===== -->
   <footer>
-    <h1 class="text-center viberent-header">Viberent</h1>
+    <h1>Viberent</h1>
     <div class="row justify-content-center">
       <a href="https://www.instagram.com/viberent.co/?hl=en" aria-label="Instagram" target="_blank" rel="noreferrer">
         <img src="{{ url_for('static', filename='images/instagram.svg') }}" alt="">
       </a>
     </div>
-    <!-- <h2 class="text-center">Sign Up For Our Newsletter</h2>
-    <div class="row justify-content-center">
-      <div class="col-sm-10">
-        <form class="form-inline justify-content-center">
-            <label for="exampleInputEmail1" class="sr-only">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
-            <button type="submit" class="btn btn-light">Submit</button>
-        </form>
-      </div>
-    </div> -->
     <div class="text-center">
-      <button type="button" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#newsletter">
+      <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#newsletter">
         Sign Up For Our Newsletter
       </button>
     </div>
