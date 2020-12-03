@@ -99,7 +99,21 @@ nav.navbar {
   border: 0;
 }
 #newsletter h1 {
-  font-size: 2em;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+}
+#newsletter .modal-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+  border-radius: 1rem;
+}
+#newsletter button.close {
+  margin-top: 0.1rem;
+  margin-right: 1rem;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 /* ===== Dye Videos ===== */
@@ -141,13 +155,6 @@ nav.navbar {
   display: none;
 }
 
-/* Calendar Section */
-#calendar .calendly-inline-widget {
-  min-width: 320px;
-  height: 800px;
-  width: 100%;
-}
-
 /* ===== About Us Page ===== */
 #about img {
   height: 140px;
@@ -179,6 +186,11 @@ nav.navbar {
 #calendar h1.header {
   margin-bottom: 0;
 }
+#calendar .calendly-inline-widget {
+  min-width: 320px;
+  height: 800px;
+  width: 100%;
+}
 
 /* ===== Footer ===== */
 footer {
@@ -206,6 +218,7 @@ footer button {
 footer p {
   padding: 0 0.5rem;
   margin-top: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 /* ===== Media Queries ===== */
