@@ -72,6 +72,32 @@
   </div>
   <main class="container">
     {% block content %}{% endblock %}
+    <div class="modal hide fade" id="newsletter" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div>
+            <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-header">
+            <h1 class="modal-title" id="modalLabel">Sign Up For Our Newsletter</h1>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="sr-only">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-outline-light">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- ===== FOOTER SECTION ===== -->

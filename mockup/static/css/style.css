@@ -106,7 +106,7 @@ nav.navbar {
   color: white;
 }
 #newsletter .modal-content {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/background.jpg");
   border-radius: 1rem;
 }
 #newsletter button.close {
