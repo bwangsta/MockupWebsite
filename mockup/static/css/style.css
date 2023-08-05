@@ -1,19 +1,32 @@
-body, html {
-	overflow-x: hidden;
-	font-family: 'Quicksand', sans-serif;
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
   height: 100%;
 }
 section {
-	padding: 3rem 0;
+  padding: 3rem 0;
 }
 .header {
   font-size: 3.5em;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1.5rem;
-  background: #03001e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fdeff9, #fd79a8, #1e3c72, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fdeff9, #fd79a8, #1e3c72, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #03001e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdeff9,
+    #fd79a8,
+    #1e3c72,
+    #03001e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdeff9,
+    #fd79a8,
+    #1e3c72,
+    #03001e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -69,7 +82,7 @@ nav.navbar {
 }
 /* Background Overlay Color */
 .video-container:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -86,34 +99,12 @@ nav.navbar {
   letter-spacing: 0.7rem;
   font-weight: 700;
   text-indent: 0.7rem;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 .content h2 {
   font-size: 2em;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.1rem;
-}
-
-/* ===== Modal ===== */
-#newsletter .modal-header, .modal-footer {
-  border: 0;
-}
-#newsletter h1 {
-  font-size: 2.5em;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  color: white;
-}
-#newsletter .modal-content {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/background.jpg");
-  border-radius: 1rem;
-}
-#newsletter button.close {
-  margin-top: 0.1rem;
-  margin-right: 1rem;
-  color: white;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 /* ===== Dye Videos ===== */
@@ -146,7 +137,7 @@ nav.navbar {
   font-size: 1.3em;
 }
 #redBtn {
-  background-color: #F8BBD0;
+  background-color: #f8bbd0;
 }
 #blueBtn {
   background-color: #000080;
@@ -158,12 +149,14 @@ nav.navbar {
 /* ===== About Us Page ===== */
 #about img {
   height: 140px;
-	width: 140px;
+  width: 140px;
   border-radius: 50%;
   margin: 0 auto;
   display: block;
 }
-#about .col-12, .col-6, .col-md-3 {
+#about .col-12,
+.col-6,
+.col-md-3 {
   text-align: center;
   padding: 15px;
 }
@@ -206,7 +199,7 @@ footer h1 {
   text-align: center;
   letter-spacing: 0.7rem;
   text-indent: 0.7rem;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 footer img {
   width: 50px;

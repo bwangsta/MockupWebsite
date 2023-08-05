@@ -1,103 +1,138 @@
-{% extends "layout.html" %}
-{% block content %}
-  <div class="modal hide fade" id="newsletter" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div>
-          <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        
-        <div class="modal-header">
-          <h1 class="modal-title" id="modalLabel">Sign Up For Our Newsletter</h1>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1" class="sr-only">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-outline-light">Submit</button>
-        </div>
+{% extends "layout.html" %} {% block content %}
+
+<section id="signUp">
+  <h1 class="header">Sign Up For Our Newsletter</h1>
+  <form class="form-inline justify-content-center">
+    <label for="exampleFormControlInput1" class="sr-only">Email address</label>
+    <input
+      type="email"
+      class="form-control form-control-lg"
+      id="exampleFormControlInput1"
+      placeholder="email"
+    />
+    <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+  </form>
+</section>
+
+<section id="dyes">
+  <div class="text-center">
+    <h1 class="header">Make an Impact</h1>
+    <h2>By Changing the Color of Your Garments</h2>
+    <h3>(Click on a Color!)</h3>
+  </div>
+  <!-- === DYE BUTTONS === -->
+  <div class="row justify-content-center">
+    <div class="col-6 col-sm-4 text-center">
+      <button
+        id="redBtn"
+        class="dyesBtn btn"
+        type="button"
+        aria-label="Pink Button"
+      ></button>
+    </div>
+    <div class="col-6 col-sm-4 text-center">
+      <button
+        id="blueBtn"
+        class="dyesBtn btn"
+        type="button"
+        aria-label="Blue Button"
+      ></button>
+    </div>
+  </div>
+  <!-- === DYE VIDEOS === -->
+  <div id="redDye" class="hidden">
+    <div class="text-center">
+      <h4>
+        By rewearing your "new" clothes
+        <span class="countDisplay">0</span> time(s), you have saved
+      </h4>
+      <div class="saved text-left">
+        <p><span class="countDisplay">0</span>x gallon(s) of dye</p>
+        <p><span class="countDisplay">0</span>x gallon(s) of other chemicals</p>
+        <p><span class="countDisplay">0</span>x gallon(s) of water</p>
+        <p>
+          <span class="countDisplay">0</span> other garment(s) you could have
+          bought instead
+        </p>
+      </div>
+      <div class="text-center">
+        <video
+          class="dyeVideos"
+          type="video/mp4"
+          autoplay
+          muted
+          controls
+          playsinline
+          controlslist="nodownload"
+        >
+          <source
+            src="{{ url_for('static', filename='videos/pink-video.webm') }}"
+            type="video/webm"
+          />
+          <source
+            src="{{ url_for('static', filename='videos/pink-video.mp4') }}"
+            type="video/mp4"
+          />
+          Your Browser Does Not Support HTML5 Video.
+        </video>
       </div>
     </div>
   </div>
-  
-  <section id="signUp">
-    <h1 class="header">Sign Up For Our Newsletter</h1>
-    <form class="form-inline justify-content-center">
-      <label for="exampleFormControlInput1" class="sr-only">Email address</label>
-      <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="email">
-      <button type="submit" class="btn btn-dark btn-lg">Submit</button>
-    </form>
-  </section>
-
-  <section id="dyes">
+  <div id="blueDye" class="hidden">
     <div class="text-center">
-      <h1 class="header">Make an Impact</h1>
-      <h2>By Changing the Color of Your Garments</h2>
-      <h3>(Click on a Color!)</h3>
-    </div>
-    <!-- === DYE BUTTONS === -->
-    <div class="row justify-content-center">
-      <div class="col-6 col-sm-4 text-center">
-        <button id="redBtn" class="dyesBtn btn" type="button" aria-label="Pink Button"></button>
+      <h4>
+        By rewearing your "new" clothes
+        <span class="countDisplay">0</span> time(s), you have saved
+      </h4>
+      <div class="saved text-left">
+        <p><span class="countDisplay">0</span>x gallons of dye</p>
+        <p><span class="countDisplay">0</span>x gallons of other chemicals</p>
+        <p><span class="countDisplay">0</span>x gallons of water</p>
+        <p>
+          <span class="countDisplay">0</span> other garments you could have
+          bought instead
+        </p>
       </div>
-      <div class="col-6 col-sm-4 text-center">
-        <button id="blueBtn" class="dyesBtn btn" type="button" aria-label="Blue Button"></button>
-      </div>
-    </div>
-    <!-- === DYE VIDEOS === -->
-    <div id="redDye" class="hidden">
       <div class="text-center">
-        <h4>By rewearing your "new" clothes <span class="countDisplay">0</span> time(s), you have saved</h4>
-        <div class="saved text-left">
-          <p><span class="countDisplay">0</span>x gallon(s) of dye</p>
-          <p><span class="countDisplay">0</span>x gallon(s) of other chemicals</p>
-          <p><span class="countDisplay">0</span>x gallon(s) of water</p>
-          <p><span class="countDisplay">0</span>  other garment(s) you could have bought instead</p>
-        </div>
-        <div class="text-center">
-          <video class="dyeVideos" type="video/mp4" autoplay muted controls playsinline controlslist="nodownload">
-            <source src="{{ url_for('static', filename='videos/pink-video.webm') }}" type="video/webm">
-            <source src="{{ url_for('static', filename='videos/pink-video.mp4') }}" type="video/mp4">
-            Your Browser Does Not Support HTML5 Video.
-          </video>
-        </div>
+        <video
+          class="dyeVideos"
+          type="video/mp4"
+          autoplay
+          muted
+          controls
+          playsinline
+          controlslist="nodownload"
+        >
+          <source
+            src="{{ url_for('static', filename='videos/blue-video.webm') }}"
+            type="video/webm"
+          />
+          <source
+            src="{{ url_for('static', filename='videos/blue-video.mp4') }}"
+            type="video/mp4"
+          />
+          Your Browser Does Not Support HTML5 Video.
+        </video>
       </div>
     </div>
-    <div id="blueDye" class="hidden">
-      <div class="text-center">
-        <h4>By rewearing your "new" clothes <span class="countDisplay">0</span> time(s), you have saved</h4>
-        <div class="saved text-left">
-          <p><span class="countDisplay">0</span>x gallons of dye</p>
-          <p><span class="countDisplay">0</span>x gallons of other chemicals</p>
-          <p><span class="countDisplay">0</span>x gallons of water</p>
-          <p><span class="countDisplay">0</span>  other garments you could have bought instead</p>
-        </div>
-        <div class="text-center">
-          <video class="dyeVideos" type="video/mp4" autoplay muted controls playsinline controlslist="nodownload">
-            <source src="{{ url_for('static', filename='videos/blue-video.webm') }}" type="video/webm">
-            <source src="{{ url_for('static', filename='videos/blue-video.mp4') }}" type="video/mp4">
-            Your Browser Does Not Support HTML5 Video.
-          </video>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section id="form">
-    <div class="row justify-content-center">
-      <div class="col-10">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyqpXKfXKTmt-6RE5KQTifcn2Qtc8lolssDefWV2HzsY9vhQ/viewform?embedded=true" 
-          title="How It Works and Feedback Google Form" width="100%" height="2750" frameborder="0" marginheight="0" 
-          marginwidth="0">Loading…</iframe>
-      </div>
+<section id="form">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeyqpXKfXKTmt-6RE5KQTifcn2Qtc8lolssDefWV2HzsY9vhQ/viewform?embedded=true"
+        title="How It Works and Feedback Google Form"
+        width="100%"
+        height="2750"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        >Loading…</iframe
+      >
     </div>
-  </section>
+  </div>
+</section>
 
 {% endblock content %}
